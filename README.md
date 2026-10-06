@@ -329,7 +329,7 @@ brauer/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/brewery-data-platform.git
+git clone https://github.com/KirillOleinikovJ/brewery-data-platform.git
 cd brewery-data-platform
 ```
 

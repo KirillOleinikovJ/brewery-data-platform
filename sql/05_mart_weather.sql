@@ -1,24 +1,8 @@
--- =========================================================
--- 1. Create staging.weather
--- =========================================================
 
-DROP TABLE IF EXISTS staging.weather;
-
-CREATE TABLE staging.weather AS
-SELECT
-    weather_date::DATE AS weather_date,
-    temperature_2m_mean,
-    temperature_2m_max,
-    temperature_2m_min,
-    precipitation_sum,
-    weather_code
-FROM raw.weather
-WHERE weather_date IS NOT NULL
-  AND precipitation_sum >= 0;
 
 
 -- =========================================================
--- 2. Validate staging.weather
+-- 1. Validate staging.weather
 -- =========================================================
 
 -- Row count
@@ -48,7 +32,7 @@ SELECT
 
 
 -- =========================================================
--- 3. Check JOIN between sales and weather
+-- 2. Check JOIN between sales and weather
 -- =========================================================
 
 SELECT
@@ -71,7 +55,7 @@ LIMIT 10;
 
 
 -- =========================================================
--- 4. Create mart.daily_sales_weather
+-- 3. Create mart.daily_sales_weather
 -- =========================================================
 
 DROP TABLE IF EXISTS mart.daily_sales_weather;
@@ -96,7 +80,7 @@ JOIN staging.weather AS w
 
 
 -- =========================================================
--- 5. Validate mart.daily_sales_weather
+-- 4. Validate mart.daily_sales_weather
 -- =========================================================
 
 -- Row count

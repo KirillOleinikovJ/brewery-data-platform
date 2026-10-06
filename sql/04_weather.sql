@@ -76,3 +76,21 @@ SELECT
     precipitation_sum
 FROM raw.weather
 WHERE precipitation_sum < 0;
+
+-- =========================================================
+-- STAGING WEATHER
+-- =========================================================
+
+DROP TABLE IF EXISTS staging.weather;
+
+CREATE TABLE staging.weather AS
+SELECT
+    weather_date::DATE AS weather_date,
+    temperature_2m_mean,
+    temperature_2m_max,
+    temperature_2m_min,
+    precipitation_sum,
+    weather_code
+FROM raw.weather
+WHERE weather_date IS NOT NULL
+  AND precipitation_sum >= 0;
