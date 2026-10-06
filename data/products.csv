@@ -1,0 +1,13 @@
+product_id,product_name,category,alcohol_percentage,package_size_l,units_per_crate,list_price_per_crate_eur,active_since
+1,Brauhaus Helles,Helles,4.9,0.5,20,22.9,2021-03-01
+2,Weizen Hell,Wheat Beer,5.2,0.5,20,24.9,2020-01-15
+3,Kellerbier,Kellerbier,5.0,0.5,20,23.9,2022-02-01
+4,Brauhaus Pils,Pils,4.8,0.5,20,22.5,2019-06-01
+5,Natur Radler,Radler,2.5,0.5,20,21.9,2023-04-01
+6,Weizen Alkoholfrei,Alcohol-Free,0.5,0.5,20,24.5,2022-01-01
+7,Brauhaus IPA,IPA,6.2,0.33,24,31.9,2024-02-01
+8,Dunkles Landbier,Dark Lager,5.1,0.5,20,24.2,2020-09-01
+9,Festbier,Seasonal,5.6,0.5,20,25.9,2021-08-01
+10,Winterbock,Bock,7.0,0.33,24,32.9,2023-10-01
+11,Leichtes Weizen,Light Beer,3.1,0.5,20,23.5,2024-05-01
+12,Hopfenfrei 0.0,Alcohol-Free,0.0,0.33,24,26.9,2025-02-01

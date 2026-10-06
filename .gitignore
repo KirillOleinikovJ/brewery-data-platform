@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+**/.env
+
+# IDE
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Airflow runtime
+airflow/logs/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg[binary]
+python-dotenv
+requests
+sentence-transformers
+pandas
+sqlparse
